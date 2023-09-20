@@ -5,26 +5,10 @@ sap.ui.define([
 ], function (Controller, MessageToast, JSONModel) {
     'use strict';
     return Controller.extend("app.First", {
-        go_to_next_screen: function () {
-            MessageToast.show("Congrats!! You are being navigated to second screen");
-            this.byId("app").to(this.byId("intro"));
-        },
-        onInit : function(){
-            var data = new JSONModel({
-                features: [
-                    "Enterprise-Ready web Toolkit",
-                    "Powerful Development",
-                    "Feature-Rich UI Controls",
-                    "Consistent User Experience",
-                    "Free and Open Source",
-                    "Responsive Across Browsers and Devices"
-                ]
-            });
-            this.getView().setModel(data);
-        },
-        onChange : function(oEvt){
-            var bState = oEvt.getParameter("state");
-            this.byId("ready").setVisible(bState);
+        copyToSecondTextArea : function(oEvt){
+            var sValue = oEvt.getParameter("value"),
+            oSecondTextArea = this.byId("copy_text_area");
+            oSecondTextArea.setValue(sValue);
         }
     });
 });
