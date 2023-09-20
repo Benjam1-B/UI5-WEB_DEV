@@ -4,54 +4,72 @@
     xmlns:core="sap.ui.core"
     xmlns:l="sap.ui.layout"
     xmlns:tnt="sap.tnt"
-    controllerName="app.First">
+    controllerName="app.First"
+>
     <App>
-    <Page title="Learn About UI5">
-    <Panel expandable="true" expanded="true" headerText="Learn about Properties">
-    <TextArea rows="5" placeholder="Enter some text" liveChange="copyToSecondTextArea">
-    </TextArea>
-    </Panel>
-    <Panel expandable="true" expanded="true" headerText="Learn about Events and Methods">
-    <TextArea id="copy_text_area" editable="false">
-    </TextArea>
-    </Panel>
-    <Panel expandable="true" expanded="true" headerText="Learn about Aggregation">
-    <Table>
-    <headerToolbar>
-    <Toolbar>
-    <Title text="Employees"/>
-    </Toolbar>
-    </headerToolbar>
-    <columns>
-    <Column >
-    <Label text="First Name"/>
-    </Column>
-    <Column >
-    <Label text="Last Name"/>
-    </Column>
-    <Column >
-    <Label text="Age"/>
-    </Column>
-    <Column >
-    <Label text="Email Address"/>
-    </Column>
-    </columns>
-    <items>
-    <ColumnListItem >
-    <Text text="Mohammed"/>
-    <Text text="Sijas"/>
-    <Text text="29"/>
-    <Text text="mail@mail.com"/>
-    </ColumnListItem>
-    <ColumnListItem >
-    <Text text="Anha"/>
-    <Text text="Sijas"/>
-    <Text text="1"/>
-    <Text text="mailbaby@mail.com"/>
-    </ColumnListItem>
-    </items>
-    </Table>
-    </Panel>
-    </Page>
+        <Page title="Learn About UI5">
+            <Panel
+                expandable="true"
+                expanded="true"
+                headerText="Learn about Properties"
+            >
+                <TextArea
+                    rows="5"
+                    placeholder="Enter some text"
+                    liveChange="copyToSecondTextArea"
+                />
+            </Panel>
+            <Panel
+                expandable="true"
+                expanded="true"
+                headerText="Learn about Events and Methods"
+            >
+                <TextArea
+                    id="copy_text_area"
+                    editable="false"
+                />
+            </Panel>
+            <Panel
+                expandable="true"
+                expanded="true"
+                headerText="Learn about Aggregation"
+            >
+                <Table>
+                    <headerToolbar>
+                        <Toolbar>
+                            <Title text="Employees" />
+                        </Toolbar>
+                    </headerToolbar>
+                    <columns>
+                        <Column>
+                            <Label text="First Name" />
+                        </Column>
+                        <Column>
+                            <Label text="Last Name" />
+                        </Column>
+                        <Column>
+                            <Label text="Age" />
+                        </Column>
+                        <Column>
+                            <Label text="Email Address" />
+                        </Column>
+                    </columns>
+                    <items>
+                        <ColumnListItem>
+                            <Text text="Mohammed" />
+                            <Text text="Sijas" />
+                            <Text text="29" />
+                            <Text text="mail@mail.com" />
+                        </ColumnListItem>
+                        <ColumnListItem>
+                            <Text text="Anha" />
+                            <Text text="Sijas" />
+                            <Text text="1" />
+                            <Text text="mailbaby@mail.com" />
+                        </ColumnListItem>
+                    </items>
+                </Table>
+            </Panel>
+        </Page>
     </App>
 </mvc:View>
