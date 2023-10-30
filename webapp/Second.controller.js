@@ -7,13 +7,13 @@ sap.ui.define([
             //alert("On Init is being invoked!");
         },
         onBeforeRendering : function(){
-            //alert("On Before Rendering is being invoked!");
+            //alert("On Before Rendering is being invoked!!");
         },
         onAfterRendering : function(){
-            //alert("On After Rendering is being invoked!");
+            //alert("On After Rendering is being invoked!!");
         },
         onExit : function(){
-            //alert("On Exit is being invoked!");
+            //alert("On Exit is being invoked!!");
         },
         onPressed : function(){
             this.showToast();
